@@ -204,6 +204,46 @@ Existen varias opciones:
 
 ![Servidor](Pictures/ServidorPDF.png)
 
+# Proyecto
+## Diseño y Bosquejo de una API 
+
+Crear, leer, eliminar y actualizar
+
+**CRUD**: Create, Read, Update and Delete. Casi siempre las aplicaciones tienen un CRUD, y podemos usar una API para que haga funcionar ese CRUD. 
+
+**Endpoint / Route / Path**: Es lo que se encuentra después del nombre del dominio y /API.
+http://twiter.com/api/tweets (api tweets es el **endpoint** o route o path)
+
+## Diseñando los Endpoints de los Tweets
+
+Aqui se simplifica la creación de los endpoints, sin embargo hay que saber que cada sigla del CRUD tiene una representación en el mundo de las APIs y se llaman verbos http que sencillamente indican en la petición que se realiza al servidor que se quiere hacer.
+
+Aqui la transformacion de CRUD a los verbos HTTP
+* Create -> POST
+* Read -> GET
+* Update -> PUT
+* Delete -> Delete
+
+![Métodos HTTP](https://developer.mozilla.org/es/docs/Web/HTTP/Methods)
+
+Seria buena practica mejor definir los endpoints de la siguiente manera
+
+* Create a tweet -> /tweets/ : POST
+* Read all tweets -> /tweets/ : GET
+* Read a tweet -> /tweets/{id}/ : GET
+* Update a tweet -> /tweets/{id} : PUT
+* Delete a tweet -> /tweets/{id}/ : DELETE
+
+PD: La simplificación no tiene nada de malo pero esta simplemente es una forma mas profesional para hacerlo
+
+## Diseñando los Endpoints para los Usuarios. 
+
+![Proyecto API](Pictures/Proyecto.png)
+
+
+
+
+
 
 
 
