@@ -88,6 +88,9 @@ Content-Type: text/html
 
 <!DoCTYPE html...(here comes the 29769 bytes of the request web page)>
 ```
+![status code http](Pictures/status_code_http.png)
+
+
 
 
 
