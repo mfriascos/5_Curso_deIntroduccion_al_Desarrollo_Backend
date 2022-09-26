@@ -40,7 +40,33 @@ Tenemos dos grandes estándares para crear las APIs:
 ```
 * Rest (Representational State Transfer): Utiliza otro lenguaje JSON (Javascript Objet Notation). Un JSON no es más que un diccionario de Python. Los diccionarios de Python son lo mismo que los objetos de JS.
 
-![REST](Pictures/JSON-438f581a-f61e-4d76-a1ab-f3c7a9c44575.webp)
+```python
+{
+    "firstname": "Jhon",
+    "lastname": "Smith",
+    "isAlive": true,
+    "age": 27,
+    "address": {
+        "streetAddress": "21 2nd Street",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10021-3100"
+    },
+    "phoneNumbers": [
+        {
+            "type": "home",
+            "number": "212 555-1234"
+        },
+        {
+            "type": "office",
+            "number": "646 555-4567
+        }
+    ],
+    "children": [],
+    "spouse: null
+}
+```
+
 
 
 
