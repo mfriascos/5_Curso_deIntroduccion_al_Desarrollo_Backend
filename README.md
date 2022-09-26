@@ -90,7 +90,38 @@ Content-Type: text/html
 ```
 ![status code http](Pictures/status_code_http.png)
 
+# ¿Cómo es el Flujo de Desarrollo de una Aplicación Web?
 
+![Flujo de desarrollo](Pictures/flujo_de_desarrollo.png)
+
+
+En el mundo de DevOps existen tres términos bastante populares: **Continuous Integration, Continuous Delivery y Continuous Deployment** ; también podemos verlo como una serie de pasos o buenas prácticas a seguir para conseguir una automatización completa de nuestro proceso de deploy a producción, ayudándonos a reducir nuestros errores y nuestro tiempo de entrega entre actualizaciones, también nos puede ayudar a enfocarnos únicamente a construir nuestro producto.
+
+## Qué es Continuous Integration
+Es un proceso en donde cada cambio que realizamos en nuestro código debe ser testeado y verificado por las pruebas que hemos escrito con anterioridad.
+
+Por ejemplo, un equipo de desarrollo puede tener diferentes ramas en Git trabajando sobre diferentes features para la próxima actualización, a la semana esto puede generar más de 500 cambios en nuestro código. Al final de la semana, cuando llegue el momento de unir todos esos cambios a la rama correspondiente, debemos asegurarnos de que todo funcione de la manera esperada, con el menor estrés y la menor cantidad de errores posible.
+
+Con Integración Continua o Continuous Integration no necesitamos esperar para hacer push a nuestra rama con todos esos cambios. En su lugar, todos los cambios realizados se van uniendo a la rama de forma continua y resolviendo los errores que generen esos pequeños cambios. También podemos tener herramientas como TravisCI, Jenkis, etc que nos ayudan en el proceso de conocer cuando un cambio no debería unirse por errores y evita que se haga.
+
+Así cuando llegue el momento de lanzar la actualización ya todos nuestros cambios han sido unidos a la rama de preferencia y todos los problemas han sido resueltos ahorrando mucho más tiempo.
+
+
+## Qué es Continuous Delivery
+Es el mismo proceso anterior, solo que de una manera más automatizada y además nuestros tests de aceptación o acceptance tests deben ser de una gran calidad. Porque Continuous Delivery se asegura de que cada cambio realizado esté listo para ser lanzado a producción.
+
+Ya que cada cambio es lanzado a una etapa intermedia o staging usando herramientas de automatización, debemos tener la confianza de realizar deploy a producción con solo presionar algún botón mágico. Podemos decidir hacerlo de una manera diaria, semanal o como mejor se ajuste a nuestro negocio.
+
+## Qué es Continuous Deployments
+Como el nombre implica, nos encargamos de hacer deploy continuamente y de forma automatizada.
+
+Es un paso más allá a Continuous Delivery, acá no vamos a necesitar ningún botón para mandar los cambios a producción y mostrarlos al público. Cada cambio que pase a cada etapa del camino no va a generar ningún tipo de error y se mandará a producción automáticamente.
+
+Puede ser el más difícil de implementar, pero una vez logrado tu equipo de desarrollo puede enfocarse únicamente en construir producto, implementando features y obteniendo feedback más seguido de tus usuarios.
+
+**Conclusión**
+
+Ninguno de estos pasos o buenas prácticas es fácil de lograr o implementar en el equipo, pero es el camino adecuado para alejarse de los dolores de cabeza que pueden ser realizar deploy a producción, también nos ayuda a reducir los errores al momento de realizar nuestra actualización y cualquier tipo de problemas que puedan ser visibles para los usuarios.
 
 
 
