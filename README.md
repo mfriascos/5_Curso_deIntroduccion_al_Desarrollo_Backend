@@ -29,12 +29,20 @@ Una API es una sección del backend que permite que el frontend pueda comunicars
 Tenemos dos grandes estándares para crear las APIs:
 
 * SOAP (Simple Objetct Access Protocol): Mueve la información a través de un lenguaje XML (Extensible Markup Language). Es similar al HTML, es un lenguaje demarcado. SOAP es un protocolo que ha quedado en el olvido.
-
-![SOAP](Pictures/xml-9789f17e-f0df-4689-a076-b072130d3904.webp)
-
+```xml
+<?xml version="1.0"?>
+<note>
+    <to>Miguel</to>
+    <from>Facundo</from>
+    <heading>Recordatorio</heading>
+    <body>¡No olvides publicar el curso!</body>
+</note>
+```
 * Rest (Representational State Transfer): Utiliza otro lenguaje JSON (Javascript Objet Notation). Un JSON no es más que un diccionario de Python. Los diccionarios de Python son lo mismo que los objetos de JS.
 
 ![REST](Pictures/JSON-438f581a-f61e-4d76-a1ab-f3c7a9c44575.webp)
+
+
 
 
 
