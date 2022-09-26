@@ -1,4 +1,4 @@
-# 5_Curso_deIntroduccion_al_Desarrollo_Backend
+# 5_Curso_de_Introduccion_al_Desarrollo_Backend
 
 <p align="center"><img width=50% src="./Pictures/backend_logo.png"></p>
 
